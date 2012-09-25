@@ -5,31 +5,21 @@ define([
   'viewmanager',
   'events',
   'text!templates/layout.html'
-], function($, _, Backbone, Vm, Events, layoutTemplate){
+], function($, _, Backbone, Viewmanager, Events, layoutTemplate){
+
   var AppView = Backbone.View.extend({
     el: 'body',
-    initialize: function () {
-    
-      var NestedView2 = Backbone.View.extend({});
-      var NestedView1 = Backbone.View.extend({
-        initialize: function () {
-          var nestedView2 = Vm.create(this, 'Nested View 2', NestedView2);
-        }
-      });
-      var nestedView1 = Vm.create(this, 'Nested View 1', NestedView1);
-
-    },
     render: function () {
-      var that = this;
+      var view = this;
       $(this.el).html(layoutTemplate);
 
 	  require(['views/header/menu'], function (HeaderMenuView) {
-        var headerMenuView = Vm.create(that, 'HeaderMenuView', HeaderMenuView);
+        var headerMenuView = Viewmanager.create(view, 'HeaderMenuView', HeaderMenuView);
         headerMenuView.render();
       });
 
 	  require(['views/footer/menu'], function (FooterMenuView) {
-		var footerMenuView = Vm.create(that, 'FooterMenuView', FooterMenuView);
+		var footerMenuView = Viewmanager.create(view, 'FooterMenuView', FooterMenuView);
 		footerMenuView.render();
 	  });
 

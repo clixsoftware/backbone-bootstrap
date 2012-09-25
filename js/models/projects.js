@@ -4,12 +4,12 @@ define([
 ], function(_, Backbone) {
   var projectsModel = Backbone.Model.extend({
     defaults: {
-      score: 10
+      someValue: 1337
     },
     initialize: function(){
+
     }
 
   });
   return projectsModel;
-
 });

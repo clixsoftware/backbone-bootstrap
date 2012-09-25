@@ -2,11 +2,8 @@ var fs = require("fs");
 var express = require("express");
 var app = express();
 
-
 app.use(express.static(__dirname + '/..'));
-
 app.use(express.favicon("./favicon.ico"));
-
 app.get("*", function(req, res) {
   fs.createReadStream("./index.html").pipe(res);
 });

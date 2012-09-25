@@ -8,6 +8,9 @@ define([
 		el: '#content',
 		render: function(){
 			this.$el.html(ContactTemplate);
+		},
+		clean: function(){
+			console.log('view is cleaned up');
 		}
 	});
 

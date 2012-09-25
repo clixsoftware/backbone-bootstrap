@@ -1,4 +1,13 @@
 backbone-bootstrap
 ==================
+Helps to rapidly build single page applications.
 
-Backbone Bootstrap (Single Page App)
+
+Frameworks used:
+==================
+
+*   RequireJS - http://requirejs.org/
+*   Backbone.js - http://backbonejs.org/under
+*   Underscore.js - http://underscorejs.org/
+*   jquery - http://jquery.com
+*   Twitter Bootstrap - http://twitter.github.com/bootstrap/
