@@ -3,7 +3,7 @@ define([
 	'underscore',
 	'backbone',
 	'viewmanager'
-], function($, _, Backbone, Vm){
+], function($, _, Backbone, Viewmanager){
 	var AboutPage = Backbone.View.extend({
 		el: '#content',
 		render: function () {

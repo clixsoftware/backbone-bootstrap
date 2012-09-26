@@ -16,7 +16,7 @@ require.config({
 });
 
 require([
-	'views/app',
+	'views/application',
 	'router',
 	'viewmanager'
 ], function (AppView, Router, ViewManager) {

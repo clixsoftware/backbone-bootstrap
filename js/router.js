@@ -41,6 +41,7 @@ define([
 				contactPage.render();
 			});
 		});
+
 		Backbone.history.start();
 	};
 	return {

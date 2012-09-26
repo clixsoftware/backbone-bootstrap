@@ -3633,3 +3633,6 @@ input[type="submit"].btn.btn-mini {
 .affix {
   position: fixed;
 }
+body {
+  padding: 60px 0 40px 0;
+}
